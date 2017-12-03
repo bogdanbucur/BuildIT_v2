@@ -1,0 +1,186 @@
+<%- contentFor('body') %>
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title ">
+                    My Profile
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- END: Subheader -->
+    <div class="m-content">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="m-portlet m-portlet--half-height">
+                    <div class="m-portlet__body">
+                        <div class="m-card-profile">
+                            <div class="m-card-profile__title m--hide">
+                                Your Profile
+                            </div>
+                            <div class="m-card-profile__pic">
+                                <div class="m-card-profile__pic-wrapper">
+                                    <img src="assets/app/media/img/users/user4.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="m-card-profile__details">
+													<span class="m-card-profile__name">
+														<%= locals.user.first_name %> <%= locals.user.last_name %>
+													</span>
+                                <span class="m-card-profile__title">
+                                    <%= locals.user.role[0] %>
+                                </span>
+                                <br>
+                                <a href="" class="m-card-profile__email m-link">
+                                    <%= locals.user.email %>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="m_user_profile_tab_1">
+                            <form class="m-form m-form--fit m-form--label-align-right" action="/user/update-profile" method="post">
+                                <div class="m-portlet__body">
+                                    <div class="form-group m-form__group row">
+                                        <div class="col-10 ml-auto">
+                                            <h3 class="m-form__section">
+                                                Personal Details
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="first_name" class="col-2 col-form-label">
+                                            First Name
+                                        </label>
+                                        <div class="col-3">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user.first_name %>"
+                                                   id="first_name" readonly>
+                                        </div>
+                                        <label for="last_name" class="col-2 col-form-label">
+                                            Last Name
+                                        </label>
+                                        <div class="col-3">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user.last_name %>"
+                                                   id="last_name" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="occupation" class="col-2 col-form-label">
+                                            Occupation
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].occupation %>"
+                                                   name="occupation" id="occupation">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="company_name" class="col-2 col-form-label">
+                                            Company Name
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].company_name %>"
+                                                   name="company_name" id="company_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="phone_number" class="col-2 col-form-label">
+                                            Phone No.
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="number" value="<%= locals.user[0].phone_number %>"
+                                                   name="phone_number" id="phone_number" max="9999999999">
+                                        </div>
+                                    </div>
+                                    <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
+                                    <div class="form-group m-form__group row">
+                                        <div class="col-10 ml-auto">
+                                            <h3 class="m-form__section">
+                                                Address
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="city" class="col-2 col-form-label">
+                                            City
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].city %>"
+                                                   name="city" id="city">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="country" class="col-2 col-form-label">
+                                            Country
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].country %>"
+                                                   name="country" id="country">
+                                        </div>
+                                    </div>
+                                    <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
+                                    <div class="form-group m-form__group row">
+                                        <div class="col-10 ml-auto">
+                                            <h3 class="m-form__section">
+                                                Social Links
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="linkedin" class="col-2 col-form-label">
+                                            Linkedin
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].linkedin %>"
+                                                   name="linkedin" id="linkedin">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="facebook" class="col-2 col-form-label">
+                                            Facebook
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].facebook %>"
+                                                   name="facebook" id="facebook">
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group row">
+                                        <label for="twitter" class="col-2 col-form-label">
+                                            Twitter
+                                        </label>
+                                        <div class="col-8">
+                                            <input class="form-control m-input" type="text" value="<%= locals.user[0].twitter %>"
+                                                   name="twitter" id="twitter">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-portlet__foot m-portlet__foot--fit">
+                                    <div class="m-form__actions">
+                                        <div class="row">
+                                            <div class="col-2"></div>
+                                            <div class="col-7">
+                                                <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
+                                                    Save changes
+                                                </button>
+                                                &nbsp;&nbsp;
+                                                <button type="reset" class="btn btn-secondary m-btn m-btn--air m-btn--custom">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane active" id="m_user_profile_tab_2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

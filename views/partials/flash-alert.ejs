@@ -1,0 +1,8 @@
+<script>
+    window.flashAlerts = window.flashAlerts || [];
+    <% locals.flash.messages.forEach(function (msg) { %>
+    <% if (msg.type && msg.message) { %>
+    window.flashAlerts.push(<%-JSON.stringify(msg)%>);
+    <% } %>
+    <% }) %>
+</script>

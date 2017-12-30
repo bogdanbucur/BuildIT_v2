@@ -1,0 +1,50 @@
+{
+  "name": "buildit_v2",
+  "version": "1.0.0",
+  "description": "This one should be the better version of my graduation project.",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node lib/server.js",
+    "knex": "knex",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdanbucur/BuildIT_v2.git"
+  },
+  "author": "Bogdan Bucur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdanbucur/BuildIT_v2/issues"
+  },
+  "homepage": "https://github.com/bogdanbucur/BuildIT_v2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "change-case": "^3.0.1",
+    "connect-redis": "^3.3.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "email-templates": "^3.1.8",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1",
+    "express-sanitizer": "^1.0.2",
+    "express-session": "^1.15.6",
+    "express-winston": "^2.4.0",
+    "fs-extra": "latest",
+    "knex": "^0.14.2",
+    "passport": "^0.4.0",
+    "passport-cookie": "^1.0.4",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.0",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0",
+    "underscore": "latest",
+    "moment": "latest"
+  }
+}

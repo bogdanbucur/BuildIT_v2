@@ -102,3 +102,4 @@
 
 <%- contentFor('additionalScript') %>
 <script type="text/javascript" src="/scripts/datatables/users-list.js"></script>
+<script type="text/javascript">window.userPermissions = <%- JSON.stringify(locals.user.permissions) %>;</script>

@@ -125,8 +125,8 @@ var DatatableRemoteAjaxDemo = function () {
                     // callback function support for column rendering
                     template: function (row) {
                         const status = {
-                            0: {'title': 'Inactive', 'class': 'm-badge--warning'},
-                            1: {'title': 'Active', 'class': 'm-badge--primary'},
+                            false: {'title': 'Inactive', 'class': 'm-badge--warning'},
+                            true: {'title': 'Active', 'class': 'm-badge--primary'},
                         };
                         return '<span class="m-badge ' + status[row.activated].class + ' m-badge--wide">' + status[row.activated].title + '</span>';
                     },
@@ -138,15 +138,20 @@ var DatatableRemoteAjaxDemo = function () {
                   overflow: 'visible',
                   template: function (row) {
                     // var dropup = (row.getDatatable().getPageSize() - row.getIndex()) <= 4 ? 'dropup' : '';
+                      let banButton = '';
+
+                      if (row.activated === true && window.userPermissions.indexOf('BAN_USER') !== -1) {
+                          banButton =  '<a href="/user/ban/' + row.user_id + '" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Ban User">\
+                                            <i class="fa fa-ban"></i>\
+                                        </a>';
+                      }
 
                     return '\
-                	<a href="/user/assign-role/' + row.user_id + '" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Assign role">\
-                		<i class="la la-edit"></i>\
-                	</a>\
-                	<a href="/user/ban/' + row.user_id + '" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Ban User">\
-                		<i class="fa fa-ban"></i>\
-                	</a>\
-                ';
+                                <a href="/user/assign-role/' + row.user_id + '" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Assign role">\
+                                    <i class="la la-edit"></i>\
+                                </a>\
+                                '+ banButton +'\
+                            ';
                   },
                 }
             ],

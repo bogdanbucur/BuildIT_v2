@@ -12,5 +12,49 @@
         </div>
     </div>
     <div class="m-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="m-portlet">
+                    <!--begin::Form-->
+                    <form method="post" action="<%= locals.pageSpecific.postLink %>"
+                          class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+                        <div class="m-portlet__body">
+                            <% if (locals.pageSpecific.product === 'gpu') { %>
+                            <% include ../partials/products/gpu-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'cpu') { %>
+                            <% include ../partials/products/cpu-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'ram') { %>
+                            <% include ../partials/products/ram-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'mobo') { %>
+                            <% include ../partials/products/mobo-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'hdd') { %>
+                            <% include ../partials/products/hdd-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'ssd') { %>
+                            <% include ../partials/products/ssd-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'power') { %>
+                            <% include ../partials/products/power-form-body.ejs %>
+                            <% } else if (locals.pageSpecific.product === 'case') { %>
+                            <% include ../partials/products/case-form-body.ejs %>
+                            <% } %>
+                        </div>
+                        <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+                            <div class="m-form__actions m-form__actions--solid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-primary">
+                                            Submit
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--end::Form-->
+                </div>
+            </div>
+        </div>
     </div>
 </div>

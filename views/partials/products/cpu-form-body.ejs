@@ -1,115 +1,211 @@
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label>
-            Full Name:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter full name">
-        <span class="m-form__help">
-														Please enter your full name
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label class="">
-            Email:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter email">
-        <span class="m-form__help">
-														Please enter your email
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label>
-            Username:
-        </label>
-        <div class="input-group m-input-group m-input-group--square">
-														<span class="input-group-addon">
-															<i class="la la-user"></i>
-														</span>
-            <input type="text" class="form-control m-input" placeholder="">
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    General
+                </h3>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your username
-													</span>
+    </div>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Name:
+                </label>
+                <input type="text" class="form-control m-input" placeholder="Enter name" name="cpu_name">
+            </div>
+            <div class="col-md-3 m--align-center">
+                <label class="">
+                    Recommended for Gaming:
+                </label>
+                <div class="m-radio-inline">
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="cpu_gaming_recommended" checked value=true>
+                        Yes
+                        <span></span>
+                    </label>
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="cpu_gaming_recommended" value=false>
+                        No
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Socket:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter socket" name="cpu_socket">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Series:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter series" name="cpu_series">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Core Name:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter core name" name="cpu_core_name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Cores:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter cores" name="cpu_cores" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Threads:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter threads" name="cpu_threads" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Frequency:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter frequency" name="cpu_frequency">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Turbo Frequency:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter turbo frequency" name="cpu_frequency_turbo">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Cache Level 2:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter cache" name="cpu_cache_level_2">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Cache Level 3:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter cache" name="cpu_cache_level_3">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Technology:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter technology" name="cpu_technology">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Power:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter power" name="cpu_power">
+                </div>
+            </div>
+            <div class="col-md-3 m--align-center">
+                <label>
+                    Included stock cooler:
+                </label>
+                <div class="m-radio-inline">
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="cpu_included_cooler" checked value=true>
+                        Yes
+                        <span></span>
+                    </label>
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="cpu_included_cooler" value=false>
+                        No
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label class="">
-            Contact:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter contact number">
-        <span class="m-form__help">
-														Please enter your contact
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label class="">
-            Fax:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Fax number">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-info-circle"></i>
-															</span>
-														</span>
+
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Memory Support
+                </h3>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter fax
-													</span>
     </div>
-    <div class="col-lg-4">
-        <label>
-            Address:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Enter your address">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-map-marker"></i>
-															</span>
-														</span>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Memory Type:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter type" name="cpu_memory_type">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label class="">
+                    Maximum Memory:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter max memory" name="cpu_memory_max">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label class="">
+                    Maximum Frequency:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter frequency" name="cpu_memory_frequency">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label class="">
+                    Support:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter support" name="cpu_memory_support">
+                </div>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your address
-													</span>
     </div>
-</div>
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label class="">
-            Postcode:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Enter your postcode">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-bookmark-o"></i>
-															</span>
-														</span>
+    <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+        <div class="m-form__actions m-form__actions--solid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        Cancel
+                    </button>
+                </div>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your postcode
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label class="">
-            User Group:
-        </label>
-        <div class="m-radio-inline">
-            <label class="m-radio m-radio--solid">
-                <input type="radio" name="example_2" checked value="2">
-                Sales Person
-                <span></span>
-            </label>
-            <label class="m-radio m-radio--solid">
-                <input type="radio" name="example_2" value="2">
-                Customer
-                <span></span>
-            </label>
-        </div>
-        <span class="m-form__help">
-														Please select user group
-													</span>
     </div>
 </div>

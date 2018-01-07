@@ -1,115 +1,315 @@
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label>
-            Full Name:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter full name">
-        <span class="m-form__help">
-														Please enter your full name
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label class="">
-            Email:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter email">
-        <span class="m-form__help">
-														Please enter your email
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label>
-            Username:
-        </label>
-        <div class="input-group m-input-group m-input-group--square">
-														<span class="input-group-addon">
-															<i class="la la-user"></i>
-														</span>
-            <input type="text" class="form-control m-input" placeholder="">
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    General
+                </h3>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your username
-													</span>
+    </div>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Name:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter name" name="mobo_name">
+                </div>
+            </div>
+            <div class="col-md-3 m--align-center">
+                <label class="">
+                    Recommended for Gaming:
+                </label>
+                <div class="m-radio-inline">
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="mobo_gaming_recommended" checked value=true>
+                        Yes
+                        <span></span>
+                    </label>
+                    <label class="m-radio m-radio--solid">
+                        <input type="radio" name="mobo_gaming_recommended" value=false>
+                        No
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Format:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter format" name="mobo_format">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Processor socket:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter socket" name="mobo_cpu_socket">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Chipset:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter chipset" name="mobo_chipset">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Supported Processors:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter processors" name="mobo_supported_cpus">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Graphic Interface:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter interface" name="mobo_gpu_interface">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Integrated audio:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter audio" name="mobo_integrated_audio">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Audio Chipset:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter chipset" name="mobo_audio_chipset">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    LAN:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter lan" name="mobo_lan">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    LAN Chipset:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter chipset" name="mobo_lan_chipset">
+                </div>
+            </div>
+            <div class="col-md-3 m--align-center">
+                    <label class="">
+                        NGFF (M.2):
+                    </label>
+                    <div class="m-radio-inline">
+                        <label class="m-radio m-radio--solid">
+                            <input type="radio" name="mobo_ngff" checked value=true>
+                            Yes
+                            <span></span>
+                        </label>
+                        <label class="m-radio m-radio--solid">
+                            <input type="radio" name="mobo_ngff" value=false>
+                            No
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label class="">
-            Contact:
-        </label>
-        <input type="email" class="form-control m-input" placeholder="Enter contact number">
-        <span class="m-form__help">
-														Please enter your contact
-													</span>
-    </div>
-    <div class="col-lg-4">
-        <label class="">
-            Fax:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Fax number">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-info-circle"></i>
-															</span>
-														</span>
+
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Support Memories
+                </h3>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter fax
-													</span>
     </div>
-    <div class="col-lg-4">
-        <label>
-            Address:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Enter your address">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-map-marker"></i>
-															</span>
-														</span>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Type:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter type" name="mobo_memory_type">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Maximum capacity:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter capacity" name="mobo_memory_capacity">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Slots:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter slots" name="mobo_memory_slots" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Support frequencies:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter frequencies" name="mobo_memory_frequencies">
+                </div>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your address
-													</span>
     </div>
 </div>
-<div class="form-group m-form__group row">
-    <div class="col-lg-4">
-        <label class="">
-            Postcode:
-        </label>
-        <div class="m-input-icon m-input-icon--right">
-            <input type="text" class="form-control m-input" placeholder="Enter your postcode">
-            <span class="m-input-icon__icon m-input-icon__icon--right">
-															<span>
-																<i class="la la-bookmark-o"></i>
-															</span>
-														</span>
+
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Slots
+                </h3>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please enter your postcode
-													</span>
     </div>
-    <div class="col-lg-4">
-        <label class="">
-            User Group:
-        </label>
-        <div class="m-radio-inline">
-            <label class="m-radio m-radio--solid">
-                <input type="radio" name="example_2" checked value="2">
-                Sales Person
-                <span></span>
-            </label>
-            <label class="m-radio m-radio--solid">
-                <input type="radio" name="example_2" value="2">
-                Customer
-                <span></span>
-            </label>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    PCI Express 3.0 x16:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter pci 3.0 x16" name="mobo_slots_pci_3_x16" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    PCI Express x1:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter pci x1" name="mobo_slots_pci_x1" value="0">
+                </div>
+            </div>
         </div>
-        <span class="m-form__help">
-														Please select user group
-													</span>
+    </div>
+</div>
+
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Internal connectors
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    Header USB 3.0:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter usb 3.0" name="mobo_internal_usb_3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Back Panel Connectors
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-portlet__body">
+        <div class="form-group m-form__group row">
+            <div class="col-md-3">
+                <label>
+                    PS/2 Mouse/Keyboard:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter ps/2" name="mobo_connectors_ps2" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    DVI:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter dvi" name="mobo_connectors_dvi" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    LAN RJ-45:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter rj-45" name="mobo_connectors_rj45" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    USB 2.0:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter usb 2.0" name="mobo_connectors_usb2" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    USB 3.0:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="number" class="form-control m-input" placeholder="Enter usb 3.0" name="mobo_connectors_usb3" value="0">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label>
+                    Audio Support:
+                </label>
+                <div class="input-group m-input-group m-input-group--square">
+                    <input type="text" class="form-control m-input" placeholder="Enter audio support" name="mobo_connectors_audio">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+        <div class="m-form__actions m-form__actions--solid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
